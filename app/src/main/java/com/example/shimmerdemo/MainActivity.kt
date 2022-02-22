@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         mBinding.shimmerViewContainer.startShimmer()
 
         lifecycleScope.launch {
-            delay(5000)
+            delay(3000)
             mBinding.shimmerViewContainer.stopShimmer()
             mBinding.shimmerViewContainer.visibility = View.GONE
             mBinding.llRealData.visibility = View.VISIBLE
